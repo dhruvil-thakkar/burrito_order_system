@@ -10,24 +10,29 @@ def FIRST_ING (FIRST_SELECTION,TOTAL_PRICE):
         FIRST_INGREDIENT_NAME = "Ground beef"
         FIRST_INGREDIENT_SELECTED = True
         return FIRST_INGREDIENT_NAME,TOTAL_PRICE
+
     elif int(FIRST_SELECTION) == 2:
         FIRST_INGREDIENT_NAME = "Carne asada"
         FIRST_INGREDIENT_SELECTED = True
         TOTAL_PRICE += 1
         return FIRST_INGREDIENT_NAME,TOTAL_PRICE       
+
     elif int(FIRST_SELECTION) == 3:
         FIRST_INGREDIENT_NAME = "Carne adovada"
         FIRST_INGREDIENT_SELECTED = True
         TOTAL_PRICE = TOTAL_PRICE+1
         return FIRST_INGREDIENT_NAME,TOTAL_PRICE
+
     elif int(FIRST_SELECTION) == 4:
         FIRST_INGREDIENT_NAME = "Scrambled eggs"
         FIRST_INGREDIENT_SELECTED = True
-        return FIRST_INGREDIENT_NAME,TOTAL_PRICE   
+        return FIRST_INGREDIENT_NAME,TOTAL_PRICE  
+
     elif int(FIRST_SELECTION) == 5:
         FIRST_INGREDIENT_NAME = "Chicken"
         FIRST_INGREDIENT_SELECTED = True
         return FIRST_INGREDIENT_NAME,TOTAL_PRICE 
+
     elif int(FIRST_SELECTION) == 6:
         FIRST_INGREDIENT_NAME = "Sofritas"
         FIRST_INGREDIENT_SELECTED = True
@@ -43,17 +48,28 @@ def ask_main_ingredient(TOTAL_PRICE):
         print ("5 - Chicken")
         print ("6 - Sofritas")
         FIRST_SELECTION = input("Type the number from 1 to 6:>  ")
-        FIRST_INGREDIENT_NAME,TOTAL_PRICE=FIRST_ING(FIRST_SELECTION,TOTAL_PRICE)
+        while True:
+            try:
+                int(FIRST_SELECTION)
+                if int(FIRST_SELECTION) in [1,2,3,4,5,6]:
+                    FIRST_INGREDIENT_NAME,TOTAL_PRICE=FIRST_ING(FIRST_SELECTION,TOTAL_PRICE)
+            except ValueError:
+                FIRST_SELECTION = input("Invalid Input. Type the number from 1 to 6:>  ")
+        #FIRST_INGREDIENT_NAME,TOTAL_PRICE=FIRST_ING(FIRST_SELECTION,TOTAL_PRICE)
         try:
             int(FIRST_SELECTION)
         except ValueError:
             print("Please enter a valid number")
             continue
-        if int(FIRST_SELECTION):
+        if int(FIRST_SELECTION) in [1,2,3,4,5,6]:
+            print("In if")
             break
+        else:
+            continue
 
     print("you choose "+FIRST_INGREDIENT_NAME+" whith the cost of "+str(TOTAL_PRICE))
     print(FIRST_INGREDIENT_NAME,TOTAL_PRICE)
+    
     
 #print (FIRST_INGREDIENT_SELECTED)
 
