@@ -1,4 +1,7 @@
-# Burrito Program
+# Burrito Program Intro
+import clear
+
+clear.clear()
 
 def get_name():
     print(" __      __       .__                                  __            ")
