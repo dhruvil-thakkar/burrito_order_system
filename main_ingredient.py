@@ -68,9 +68,9 @@ def ask_main_ingredient(TOTAL_PRICE):
             continue
 
     print("you choose "+FIRST_INGREDIENT_NAME+" whith the cost of "+str(TOTAL_PRICE))
-    print(FIRST_INGREDIENT_NAME,TOTAL_PRICE)
+    return FIRST_INGREDIENT_NAME,TOTAL_PRICE
     
     
 #print (FIRST_INGREDIENT_SELECTED)
 
-ask_main_ingredient(TOTAL_PRICE)
+#ask_main_ingredient(TOTAL_PRICE)

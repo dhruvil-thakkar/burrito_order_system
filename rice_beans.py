@@ -1,5 +1,5 @@
 
-def rice_beans(cost=5):
+def rice_beans(cost):
     print("\n\nNow we will select if you want to add Rice or Beans")
     print("Adding Rice or Cilantro Rice will be additional $0.25")
     print("You can add Beans for free")
@@ -7,15 +7,16 @@ def rice_beans(cost=5):
     rice = 'No'
     while add_rice.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_rice = input("Invalid Input. Do you want to add Rice for additional $0.25? Please enter Y or N: ")
-        if add_rice.lower() == 'y' or add_rice.lower() == 'yes':
-            cost+=0.25
-            rice = 'Yes'
+    if add_rice.lower() == 'y' or add_rice.lower() == 'yes':
+        cost+=0.25
+        rice = 'Yes'
     add_beans = input("Do you want to add Beans for free? Enter Y or N: ")
     beans = 'No'
     while add_beans.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:   
         add_beans = input("Invalid Input. Do you want to add beans for free? Please enter Y or N: ")
-        if add_beans.lower() == 'y' or add_beans.lower() == 'yes':
-            beans = 'Yes'
-    print(cost,rice,beans)
+    if add_beans.lower() == 'y' or add_beans.lower() == 'yes':
+        beans = 'Yes'
+    #print(cost,rice,beans)
+    return cost, rice, beans
 
-rice_beans()
+#rice_beans()

@@ -30,9 +30,10 @@ fillings = {
 }
 '''
 
-def fillings(cost=0):
+def fillings(cost):
     selections = []
-    add_beans = input("\nDo you want to add beans for additional $0.50? Enter Y or N: ")
+    print("\n\n Now lets add some Fillings to your Burrito!!!\n")
+    add_beans = input("Do you want to add beans for additional $0.50? Enter Y or N: ")
     beans = 'No'
     while add_beans.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_beans = input("Invalid Input. Do you want to add beans for additional $0.50? Please enter Y or N: ")
@@ -41,7 +42,7 @@ def fillings(cost=0):
         cost+=0.50
         selections.append("beans")
 
-    add_Chorizo = input("\nDo you want to add chorizo for additional $1.00? Enter Y or N: ")
+    add_Chorizo = input("Do you want to add chorizo for additional $1.00? Enter Y or N: ")
     Chorizo = 'No'
     while add_Chorizo.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_Chorizo = input("Invalid Input. Do you want to add chorizo for additional $1.00? Please enter Y or N: ")
@@ -50,7 +51,7 @@ def fillings(cost=0):
         Chorizo = 'Yes'
         selections.append("Chorizo")
 
-    add_Green = input("\nDo you want to add green chile salsa for additional $0.25? Enter Y or N: ")
+    add_Green = input("Do you want to add green chile salsa for additional $0.25? Enter Y or N: ")
     beans = 'No'
     while add_Green.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_Green = input("Invalid Input. Do you want to add green chile salsa for additional $0.25? Please enter Y or N: ")
@@ -59,7 +60,7 @@ def fillings(cost=0):
         Green = 'Yes'
         selections.append("Chile Salsa")
 
-    add_cheese = input("\nDo you want to add cheese for free? Enter Y or N: ")
+    add_cheese = input("Do you want to add cheese for free? Enter Y or N: ")
     cheese = 'No'
     while add_cheese.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_cheese = input("Invalid Input. Do you want to add cheese for free? Please enter Y or N: ")
@@ -67,7 +68,7 @@ def fillings(cost=0):
         cheese = 'Yes'
         selections.append("Chese")
 
-    add_cheesex = input("\nDo you want to add extra cheese for additional $0.50? Enter Y or N: ")
+    add_cheesex = input("Do you want to add extra cheese for additional $0.50? Enter Y or N: ")
     cheesex = 'No'
     while add_cheesex.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_cheese = input("Invalid Input. Do you want to add extra cheese for additional $0.50? Please enter Y or N: ")
@@ -76,7 +77,7 @@ def fillings(cost=0):
         cheesex = 'Yes'
         selections.append("Extra Cheese")
 
-    add_Potatoes = input("\nDo you want to add potatoes for additional $1.00? Enter Y or N: ")
+    add_Potatoes = input("Do you want to add potatoes for additional $1.00? Enter Y or N: ")
     Potatoes = 'No'
     while add_Potatoes.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_Potatoes = input("Invalid Input. Do you want to add potatoes for additional $1.00? Please enter Y or N: ")
@@ -109,6 +110,7 @@ def fillings(cost=0):
         Salsa = 'Yes'
         selections.append("Salsa")
 
-    print(selections)
+    #print(selections)
+    return selections,cost
 
-fillings()
+#fillings()
