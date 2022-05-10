@@ -1,5 +1,5 @@
 import random 
-def user_confirm(cost=5,main_ingredient='Avacado',rice='No',beans='No',fillings=[None]):
+def user_confirm(cost,main_ingredient,rice,beans,fillings):
     order_no = random.randint(1,10000000)
     print("\nHere's how your Burrito is customized:")
     print("Main Ingredient =",main_ingredient)
@@ -15,4 +15,4 @@ def user_confirm(cost=5,main_ingredient='Avacado',rice='No',beans='No',fillings=
     elif confirm.lower() == 'n' or confirm.lower() == 'no':
         print("Your order is cancelled. Please start over again!!")
 
-user_confirm()
+#user_confirm()

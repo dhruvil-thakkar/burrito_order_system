@@ -2,7 +2,7 @@ import intro
 import main_ingredient
 import rice_beans
 import fillings
-#import confirm
+import confirm
 
 cost_of_burrito = 5
 ingredient = None
@@ -16,6 +16,7 @@ cost_of_burrito, rice, beans = rice_beans.rice_beans(cost_of_burrito)
 #print(cost_of_burrito,rice,beans)
 
 burrito_fillings,cost_of_burrito = fillings.fillings(cost_of_burrito)
-print(burrito_fillings,cost_of_burrito)
+#print(burrito_fillings,cost_of_burrito)
 
+confirm.user_confirm(cost_of_burrito,ingredient,rice,beans,burrito_fillings)
 

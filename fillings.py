@@ -1,6 +1,6 @@
 # Fillings
 
-print("     Now it is time to select fillings.")
+#print("     Now it is time to select fillings.")
 
 users_list = '''
      1: Extra beans, add $.50
@@ -14,7 +14,7 @@ users_list = '''
      9: Potatoes, add $1.00
 '''
 
-print(users_list)
+#print(users_list)
 
 '''
 fillings = {
@@ -32,13 +32,13 @@ fillings = {
 
 def fillings(cost):
     selections = []
-    print("\n\n Now lets add some Fillings to your Burrito!!!\n")
+    print("\n\nNow lets add some Fillings to your Burrito!!! We will select from the following options: \n")
+    print(users_list)
     add_beans = input("Do you want to add beans for additional $0.50? Enter Y or N: ")
     beans = 'No'
     while add_beans.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:
         add_beans = input("Invalid Input. Do you want to add beans for additional $0.50? Please enter Y or N: ")
     if add_beans.lower() == 'y' or add_beans.lower() == 'yes':
-        print("Within if")
         cost+=0.50
         selections.append("beans")
 
