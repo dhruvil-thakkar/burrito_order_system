@@ -1,8 +1,5 @@
 # Fillings
 
-# Testing connection.
-print("     Fillings sub-module succesfully connected!\n")
-
 print("     Now it is time to select fillings.")
 
 users_list = '''
