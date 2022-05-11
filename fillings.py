@@ -1,3 +1,4 @@
+import text_colors
 # Fillings
 
 #print("     Now it is time to select fillings.")
@@ -32,7 +33,7 @@ fillings = {
 
 def fillings(cost):
     selections = []
-    print("\nNow lets add some Fillings to your Burrito!!! We will select from the following options: ")
+    print(text_colors.WARNING + "\nNow lets add some Fillings to your Burrito!!! We will select from the following options: ")
     print(users_list)
     add_beans = input("Do you want to add beans for additional $0.50? Enter Y or N: ")
     beans = 'No'

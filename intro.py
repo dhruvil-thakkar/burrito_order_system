@@ -1,10 +1,10 @@
 # Burrito Program Intro
 import clear
-
+import text_colors
 clear.clear()
 
 def get_name():
-    print(" __      __       .__                                  __            ")
+    print(text_colors.OKCYAN + " __      __       .__                                  __            ")
     print("/  \    /  \ ____ |  |   ____  ____   _____   ____   _/  |_  ____        ")
     print("\   \/\/   // __ \|  | _/ ___\/  _ \ /     \_/ __ \  \   __\/  _ \       ")
     print(" \        /\  ___/|  |_\  \__(  <_> )  Y Y  \  ___/   |  | (  <_> )      ")
@@ -28,7 +28,7 @@ def get_name():
     print("|  Y Y  \/ __ \\  \___|   Y  \  |   |  \  ___/\|                         ")
     print("|__|_|  (____  /\___  >___|  /__|___|  /\___  >_                         ")
     print("      \/     \/     \/     \/        \/     \/\/  \n                     ")
-    print("     Welcome to the burrito order taking machine!")
+    print(text_colors.ENDC +"     Welcome to the burrito order taking machine!")
     print("     We are so glad you are here.")
     global name
     name = input("     What is your name? ")

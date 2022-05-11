@@ -1,6 +1,7 @@
+import text_colors
 
 def rice_beans(cost):
-    print("\nNow we will select if you want to add Rice or Beans. Adding Rice or Cilantro Rice will be additional $0.25. You can add Beans for free")
+    print(text_colors.OKGREEN+"\nNow we will select if you want to add Rice or Beans. Adding Rice or Cilantro Rice will be additional $0.25. You can add Beans for free")
     add_rice = input("\nDo you want to add Rice for additional $0.25? Enter Y or N: ")
     rice = 'No'
     while add_rice.lower() not in ['Yes', 'Y', 'y', 'N', 'n', 'No','YES','no']:

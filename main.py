@@ -1,3 +1,4 @@
+import text_colors
 import intro 
 import main_ingredient
 import rice_beans

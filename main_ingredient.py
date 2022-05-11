@@ -1,3 +1,5 @@
+import text_colors
+
 #this is an example of the switch used
 #Decalaration of the variables used
 FIRST_INGREDIENT_SELECTED = False
@@ -40,14 +42,14 @@ def FIRST_ING (FIRST_SELECTION,TOTAL_PRICE):
 
 def ask_main_ingredient(TOTAL_PRICE):
     while FIRST_INGREDIENT_SELECTED == False:
-        print ("Please select one of the fillowing ingredients by typing the number")
+        print (text_colors.HEADER+"Please select one of the following ingredients by typing the number")
         print ("1 - Ground beef")
         print ("2 - Carne asada (add $1.00)")
         print ("3 - Carne adovada (add $1.00)")
         print ("4 - Scrambled eggs")
         print ("5 - Chicken")
         print ("6 - Sofritas")
-        FIRST_SELECTION = input("Type the number from 1 to 6:>  ")
+        FIRST_SELECTION = input("Type the number from 1 to 6: ")
         while True:
             try:
                 int(FIRST_SELECTION)
