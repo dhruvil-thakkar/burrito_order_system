@@ -32,7 +32,7 @@ def get_name():
     print("     We are so glad you are here.")
     global name
     name = input("     What is your name? ")
-    print("     Welcome " + name + ". You must be hungry. Lets get some delicious Burritos"+"!\n")
+    print("\n     Welcome " + name + ". You must be hungry. Lets get some delicious Burritos"+"!\n")
     return name
 
 get_name()

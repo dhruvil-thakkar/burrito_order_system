@@ -67,7 +67,7 @@ def ask_main_ingredient(TOTAL_PRICE):
         else:
             continue
 
-    print("you choose "+FIRST_INGREDIENT_NAME+" whith the cost of "+str(TOTAL_PRICE))
+    print("\nYou have selected "+FIRST_INGREDIENT_NAME+" as main ingredient. Your current Burrito cost is "+str(TOTAL_PRICE))
     return FIRST_INGREDIENT_NAME,TOTAL_PRICE
     
     

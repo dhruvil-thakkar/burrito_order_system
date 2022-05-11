@@ -32,7 +32,7 @@ fillings = {
 
 def fillings(cost):
     selections = []
-    print("\n\nNow lets add some Fillings to your Burrito!!! We will select from the following options: \n")
+    print("\nNow lets add some Fillings to your Burrito!!! We will select from the following options: ")
     print(users_list)
     add_beans = input("Do you want to add beans for additional $0.50? Enter Y or N: ")
     beans = 'No'
