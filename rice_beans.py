@@ -15,7 +15,7 @@ def rice_beans(cost):
     if add_beans.lower() == 'y' or add_beans.lower() == 'yes':
         beans = 'Yes'
     #print(cost,rice,beans)
-    print("\nYou have selected {0} for Rice and {1} for Beans. Your current cost is {2}".format(rice,beans,cost))
+    print("\nYou have selected {0} for Rice and {1} for Beans. Your current cost is ${2}".format(rice,beans,cost))
     return cost, rice, beans
 
 #rice_beans()
