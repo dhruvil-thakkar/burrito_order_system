@@ -3,8 +3,8 @@ import text_colors
 
 def user_confirm(cost,main_ingredient,rice,beans,fillings):
     order_no = random.randint(1,10000000)
-    print(text_colors.OKCYAN+"\n#########################################")
-    print("\nHere's how your Burrito is customized:")
+    print(text_colors.OKCYAN+"\n#################################################")
+    print("\nHere's how your Burrito is customized:\n")
     print("Main Ingredient =",main_ingredient)
     print("Rice =",rice)
     print("Beans =",beans)
